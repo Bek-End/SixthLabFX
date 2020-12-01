@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="704.0" prefWidth="972.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <BorderPane layoutX="-8.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="704.0" prefWidth="970.0" style="-fx-background-color: black;">
+         <top>
+            <AnchorPane fx:id="UP" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="179.0" prefWidth="980.0" style="-fx-background-color: black;" BorderPane.alignment="BOTTOM_LEFT">
+               <children>
+                  <Label layoutX="67.0" layoutY="26.0" prefHeight="132.0" prefWidth="209.0" style="-fx-background-color: black; -fx-background-radius: 15px; -fx-border-color: #C26004; -fx-border-radius: 15px; -fx-border-width: 5px;" text="Sixth Lab" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Century Gothic Bold" size="43.0" />
+                     </font>
+                  </Label>
+                  <ComboBox fx:id="FigurePicker" layoutX="549.0" layoutY="26.0" prefHeight="28.0" prefWidth="117.0" style="-fx-background-color: #B5520B; -fx-background-radius: 10px;" />
+                  <Button fx:id="Create" layoutX="291.0" layoutY="27.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="100.0" style="-fx-background-color: #B5520B; -fx-background-radius: 10px;" text="Create" textFill="WHITE">
+                     <font>
+                        <Font name="Bauhaus 93" size="20.0" />
+                     </font></Button>
+                  <Button fx:id="Show" layoutX="402.0" layoutY="27.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="100.0" style="-fx-background-color: #B5520B; -fx-background-radius: 10px;" text="Show" textFill="WHITE">
+                     <font>
+                        <Font name="Bauhaus 93" size="20.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="Move" layoutX="291.0" layoutY="78.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="210.0" style="-fx-background-color: #B5520B; -fx-background-radius: 10px;" text="Move" textFill="WHITE">
+                     <font>
+                        <Font name="Bauhaus 93" size="20.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="Clear" layoutX="291.0" layoutY="126.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="67.0" style="-fx-background-color: #B5520B; -fx-background-radius: 10px;" text="Clear" textFill="WHITE">
+                     <font>
+                        <Font name="Bauhaus 93" size="17.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="Destroy" layoutX="368.0" layoutY="126.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="131.0" style="-fx-background-color: #B5520B; -fx-background-radius: 10px;" text="Destroy" textFill="WHITE">
+                     <font>
+                        <Font name="Bauhaus 93" size="17.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="Up" layoutX="586.0" layoutY="75.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="42.0" style="-fx-background-color: #B5520B; -fx-background-radius: 40px;" text="^" textFill="WHITE">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="Down" layoutX="586.0" layoutY="132.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="43.0" style="-fx-background-color: #B5520B; -fx-background-radius: 40px;" text="v" textFill="WHITE">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="Right" layoutX="630.0" layoutY="96.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="42.0" prefWidth="31.0" style="-fx-background-color: #B5520B; -fx-background-radius: 40px;" text="&gt;" textFill="WHITE">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="Left" layoutX="554.0" layoutY="98.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" mnemonicParsing="false" prefHeight="41.0" prefWidth="32.0" style="-fx-background-color: #B5520B; -fx-background-radius: 40px;" text="&lt;" textFill="WHITE">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="rot" layoutX="646.0" layoutY="63.0" mnemonicParsing="false" text="rotate" />
+               </children>
+            </AnchorPane>
+         </top>
+         <center>
+            <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="516.0" prefWidth="979.0" style="-fx-background-color: white;" BorderPane.alignment="TOP_LEFT">
+               <children>
+                  <Group fx:id="group">
+                     <children>
+                        <Canvas fx:id="PlaceToDraw" height="518.0" width="980.0" />
+                     </children>
+                  </Group>
+               </children></AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+</AnchorPane>
